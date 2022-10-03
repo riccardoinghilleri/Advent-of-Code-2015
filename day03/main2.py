@@ -42,3 +42,4 @@ for c in input.readline():
             l1.append(House(i2,j2))
     count += 1
 print(len(l1))
+input.close()

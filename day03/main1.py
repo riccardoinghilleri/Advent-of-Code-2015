@@ -25,5 +25,4 @@ for c in input.readline():
     if flag == 0:
         l1.append(House(i,j))
 print(len(l1))
-
-
+input.close()
