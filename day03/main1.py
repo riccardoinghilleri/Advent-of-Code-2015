@@ -1,9 +1,13 @@
+class House:
+    def __init__(self,i,j):
+        self.i = i
+        self.j = j
+
 input = open('input.txt')
 i = 0
 j = 0
-l1 = [0]
-l2 = [0]
 flag = 0
+l1 = [House(i,j)]
 for c in input.readline():
     flag = 0
     if c == '^':
@@ -14,11 +18,12 @@ for c in input.readline():
         j -= 1
     elif c == '>':
         j += 1
-    for num in range(len(l1)):
-        if l1[num] == i and l2[num] == j:
+    for elem in l1:
+        if elem.i == i and elem.j == j:
             flag = -1
             break
     if flag == 0:
-        l1.append(i)
-        l2.append(j)
+        l1.append(House(i,j))
 print(len(l1))
+
+
