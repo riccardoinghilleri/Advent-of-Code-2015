@@ -11,5 +11,5 @@ with open('input.txt') as input:
             if num < len(line) - 2 and line[num] == line[num + 2]:
                 repeat_flag = True
         if repeat_flag and pair_flag:
-            count +=1
+            count += 1
 print(count)

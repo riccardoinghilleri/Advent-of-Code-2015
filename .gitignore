@@ -128,6 +128,10 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# JetBrains related
+.idea/
+advent-of-code-2015.iml
+
 # VS Code related
 .vscode/
 .vs/
